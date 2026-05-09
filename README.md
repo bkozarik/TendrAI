@@ -173,6 +173,4 @@ Most Czech procurement tools are either static portals that require manual searc
 
 <div align="center">
 
-Data from **[NIPEZ](https://www.nipez.cz)** · AI by **[Anthropic](https://anthropic.com)** · Built in Prague
-
 </div>
