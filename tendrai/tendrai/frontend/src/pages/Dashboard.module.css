@@ -1,0 +1,57 @@
+.layout { display: flex; min-height: 100vh; }
+.main { flex: 1; padding: 28px 32px; max-width: 960px; }
+
+.topbar { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; }
+.title { font-size: 22px; font-weight: 600; color: var(--gray-900); }
+.sub { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+.topActions { display: flex; gap: 8px; align-items: center; }
+.notifBtn { border-color: var(--green); color: var(--green-dark); background: var(--green-light); }
+
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin-bottom: 20px; }
+.stat { background: var(--gray-100); border-radius: var(--radius); padding: 14px 16px; }
+.statLabel { font-size: 12px; color: var(--gray-400); margin-bottom: 4px; }
+.statVal { font-size: 24px; font-weight: 600; color: var(--gray-900); }
+
+.notifPanel { margin-bottom: 20px; padding: 14px 18px; }
+.sectionTitle { font-size: 11px; font-weight: 600; color: var(--gray-400); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; }
+.notif { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 0.5px solid var(--gray-100); }
+.notif:last-child { border-bottom: none; }
+.notifUnread .notifText { font-weight: 500; }
+.notifDot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.dotGreen { background: var(--green); }
+.dotAmber { background: var(--amber); }
+.dotBlue  { background: var(--blue); }
+.notifText { flex: 1; font-size: 13px; color: var(--gray-900); }
+.notifTime { font-size: 11px; color: var(--gray-400); white-space: nowrap; }
+
+.filters { margin-bottom: 18px; display: flex; flex-direction: column; gap: 10px; }
+.search { max-width: 360px; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill {
+  font-size: 12px; padding: 4px 12px; border-radius: 20px;
+  border: 0.5px solid var(--gray-200); background: #fff;
+  color: var(--gray-600); cursor: pointer; transition: all .12s;
+}
+.pill:hover { border-color: var(--green-mid); color: var(--green-dark); }
+.pillActive { background: var(--green-light); border-color: var(--green-mid); color: var(--green-dark); font-weight: 500; }
+
+.list { display: flex; flex-direction: column; gap: 10px; }
+.tenderCard { cursor: pointer; transition: border-color .15s; }
+.tenderCard:hover { border-color: var(--green-mid); }
+.saved { border-left: 3px solid var(--green); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
+
+.cardTop { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; }
+.cardLeft { flex: 1; min-width: 0; }
+.cardTitle { font-size: 14px; font-weight: 500; color: var(--gray-900); margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cardMeta { font-size: 12px; color: var(--gray-400); margin-bottom: 8px; }
+.cardBadges { display: flex; flex-wrap: wrap; gap: 5px; }
+
+.cardRight { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; flex-shrink: 0; }
+.score { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.scoreNum { font-size: 20px; font-weight: 600; }
+.scoreLabel { font-size: 10px; color: var(--gray-400); }
+.scoreBar { width: 52px; height: 3px; background: var(--gray-100); border-radius: 2px; overflow: hidden; }
+.scoreFill { height: 100%; border-radius: 2px; }
+.saveBtn { padding: 6px 10px; font-size: 16px; }
+
+.empty { text-align: center; padding: 60px 20px; color: var(--gray-400); font-size: 14px; }

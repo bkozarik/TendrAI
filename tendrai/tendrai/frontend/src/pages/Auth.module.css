@@ -1,0 +1,26 @@
+.page {
+  min-height: 100vh; display: flex; align-items: center;
+  justify-content: center; background: var(--gray-50); padding: 20px;
+}
+.box {
+  background: #fff; border: var(--border);
+  border-radius: var(--radius-lg); padding: 36px 32px;
+  width: 100%; max-width: 380px;
+}
+.logo { font-size: 22px; font-weight: 600; margin-bottom: 20px; color: var(--gray-900); }
+.logo span { color: var(--green); }
+.heading { font-size: 18px; font-weight: 600; margin-bottom: 20px; }
+.error { background: #FCEBEB; color: #A32D2D; font-size: 13px; padding: 10px 12px; border-radius: var(--radius); margin-bottom: 16px; }
+.form { display: flex; flex-direction: column; gap: 14px; }
+.form label { display: flex; flex-direction: column; gap: 5px; font-size: 13px; font-weight: 500; color: var(--gray-600); }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.link { margin-top: 18px; font-size: 13px; color: var(--gray-400); text-align: center; }
+.link a { color: var(--green); text-decoration: none; font-weight: 500; }
+.groupLabel { font-size: 12px; font-weight: 600; color: var(--gray-400); text-transform: uppercase; letter-spacing: .4px; margin-top: 4px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-size: 12px; padding: 5px 12px; border-radius: 20px;
+  border: 0.5px solid var(--gray-200); background: #fff;
+  color: var(--gray-600); cursor: pointer;
+}
+.chipActive { background: var(--green-light); border-color: var(--green-mid); color: var(--green-dark); font-weight: 500; }
